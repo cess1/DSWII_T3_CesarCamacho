@@ -8,3 +8,4 @@ import pe.edu.cibertec.DSWII_T3_CESAR_CAMACHO.model.bd.Rol;
 public interface RolRepository extends JpaRepository<Rol, Integer> {
     Rol findByNomrol(String nomrol);
 }
+

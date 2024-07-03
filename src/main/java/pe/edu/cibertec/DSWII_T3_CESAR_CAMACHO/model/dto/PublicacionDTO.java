@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class PublicacionDTO implements DtoEntity{
 
+
     private String titulo;
     private String resumen;
     private String fechPublicacion;

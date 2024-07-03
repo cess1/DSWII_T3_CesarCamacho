@@ -13,5 +13,6 @@ public class DtoUtil {
 
     public Object convertirDtoAEntity(Object obj, DtoEntity mapper) {
         return new ModelMapper().map(mapper, obj.getClass());
+    }
 }
-}
+

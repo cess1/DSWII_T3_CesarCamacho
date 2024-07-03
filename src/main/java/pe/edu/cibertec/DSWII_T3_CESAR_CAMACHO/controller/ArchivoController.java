@@ -28,7 +28,7 @@ public class ArchivoController {
     public ResponseEntity<String> subirArchivo(@RequestParam("archivo") MultipartFile file) {
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
         if (!fileName.endsWith(".png")) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Solo se aceptan imagenes: Solo .png");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(" Archivos permitidos : PNG: Solo .png");
         }
 
         try {
@@ -42,7 +42,7 @@ public class ArchivoController {
 
             return ResponseEntity.status(HttpStatus.OK).body("El se cargo con exito: " + fileName);
         } catch (IOException e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("No se cargo el archivo, error: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("El archivo no se ha enviado falla: " + e.getMessage());
         }
     }
 }

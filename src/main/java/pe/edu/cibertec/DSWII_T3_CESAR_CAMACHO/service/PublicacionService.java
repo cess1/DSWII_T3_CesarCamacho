@@ -16,5 +16,5 @@ public class PublicacionService implements IPublicacionService{
     @Override
     public List<Publicacion> obtenerPublicacion() {
         return publicacionRepository.findAll();
-}
+    }
 }
