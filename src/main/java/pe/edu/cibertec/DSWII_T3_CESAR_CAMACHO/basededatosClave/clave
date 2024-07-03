@@ -1,0 +1,7 @@
+localhost:8081/api/v1/auth/login?usuario=usu_gestor&password=1234
+
+localhost:8081/filesimages
+
+localhost:8081/api/v1/auth/login?usuario=usu_coordinador&password=1234
+
+localhost:8081/pubs-dto
